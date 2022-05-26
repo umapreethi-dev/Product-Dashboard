@@ -1,24 +1,59 @@
-.App {
-   
-}
+/* 091C34 */
+/* 00888F */
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.container {
+    margin: 0% 10%;
+    padding-top: 3%;
 }
 
 .product-card {
     margin: 1%;
+    text-align: center;
 }
 
+.product-image {
+    height: 300px;
+    width: 300px;
+}
+
+/* Product cards */
+@media (min-width: 600px) and (max-width: 1100px) {
+    .product-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+    }
+  }
+@media (min-width: 1100px) {
+    .product-container {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+    }
+  }
+/* .product-card:hover {
+    transform: scale(0.9);
+} */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #091C34;
+}
 .nav-link {
     text-decoration: none;
     color: #fff;
 }
-
+.form-card {
+    margin: 2% 5%;
+    padding: 2%;
+}
 .form {
-    margin: 5%;
+   
     display: flex;
     flex-direction: column;
     height: 50vh;
